@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #6d6d6d;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.anima{
+    width: 100%;
+    height: 830px;
+    background: url(Building.png) fixed no-repeat;
+    background-size: cover;
+    animation: slide 20s infinite;
+    position: absolute;
+}
+@keyframes slide {
+    33%{
+        background: url(Assembly.png) fixed no-repeat;
+        background-size: cover;
+    }
+    66%{
+        background: url(Band.png) fixed no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url(Building.png) fixed no repeat;
+        background-size: cover;
+    }
+}
+
+.univ{
+    width: 100%;
+    height: 830px;
+    background: url(LPU.png) fixed no-repeat;
+    background-size: cover;
+    animation: slip 20s infinite;
+}
+
+@keyframes slip {
+    25%{
+        background: url(Admission.png) fixed no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url(Audi.png) fixed no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background: url(modi.png) fixed no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url(LPU.png) fixed no-repeat;
+        background-size: cover;
+    }
+}
+
+.scroller .slide{
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    border: 2px solid white;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+.scroller .slide:hover{
+    background: rgba(255,255,255,0.2);
+}
+.scroller .right{
+    right: 0;
+}
+.slide span{
+    font-size: 35px;
+    color: white;
+    line-height: 41px;
+}
